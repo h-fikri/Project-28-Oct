@@ -5,21 +5,56 @@
 }
 
 body {
-
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: #e4e5ee;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  /* color: red; */
+/* header and navbar setting start */
+header, footer {
+  background-color: #323540;
+  color: #92c9ca;
 }
 
-p {
-  margin: 0;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+a, a:link {
+  text-decoration: none;
+  color: #92c9ca;
+}
+
+ul{
+  list-style-type: none;
+}
+
+#branding {
+  background-color: #92c9ca;
+  color: #323540;
+}
+
+#branding h1 {
+  margin-left: 100px;
+}
+
+
+.ul-link {
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+ul li {
+  padding: 20px;
+}
+
+ul li a {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #92c9ca;
+}
+
+/* header and navbar setting end */
