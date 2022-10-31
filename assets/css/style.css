@@ -7,6 +7,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -35,15 +36,11 @@ ul{
 #branding {
   background-color: var(--main-color);
   color: var(--second-color);
+  padding-left: 100px;
 }
-
-#branding h1 {
-  margin-left: 100px;
-}
-
 
 .ul-link {
-  margin-right: 40px;
+  /* margin-right: 40px; */
   display: flex;
   justify-content: space-between;
   
@@ -232,3 +229,41 @@ footer {
   justify-content: center;
   padding: 10px
 }
+
+/* Small screen devices (320px and above) */
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #branding {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav ul li {
+    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+  }
+
+  .hero-banner h2 {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .hero-banner {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Medium screen devices (750px and above) */
+@media only screen and (max-width: 768px) {...}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (max-width: 1200px) {...}
