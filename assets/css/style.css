@@ -230,7 +230,7 @@ footer {
   padding: 10px
 }
 
-/* Small screen devices (320px and above) */
+/* Small screen devices Mobile (320px and above) */
 @media only screen and (max-width: 600px) {
   .container {
     display: flex;
@@ -260,10 +260,52 @@ footer {
     display: flex;
     justify-content: center;
   }
+
+  /* grid for media queries */
+  .main-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .about { grid-area: 1 / 1 / 2 / 2; }
+    .about-content { grid-area: 2 / 1 / 3 / 2; }
+    .work { grid-area: 3 / 1 / 4 / 2; }
+    .work-content { grid-area: 4 / 1 / 5 / 2; }
+    .contact { grid-area: 5 / 1 / 6 / 2; }
+    .contact-content { grid-area: 6 / 1 / 7 / 2; }
+    
+    .about, .work, .contact {
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      border-bottom: #323540 2px solid;
+    }
+
+    /* grid for nested grid work */
+    .work-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
+      grid-gap: 5px;
+      grid-template-areas: 
+      "surf"
+      "led" 
+      "calc"
+      "pastel"
+      "run";
+    }
+
+    .cards {
+      height: 100px;
+      width: 60%;
+      margin: 0;
+      padding: 0;
+    }
+
 }
 
-/* Medium screen devices (750px and above) */
-@media only screen and (max-width: 768px) {...}
-
-/* Extra big screen devices (1200px and above) */
-@media only screen and (max-width: 1200px) {...}
+/* Medium screen devices Tablet (750px and above) */
+/* @media only screen and (max-width: 768px) {...} */
