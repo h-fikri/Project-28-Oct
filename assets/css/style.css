@@ -1,3 +1,7 @@
+:root {
+  --main-color: #8ae4e4;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +17,7 @@ body {
 /* header and navbar setting start */
 header, footer {
   background-color: #323540;
-  color: #92c9ca;
+  color: var(--main-color);
 }
 
 .container {
@@ -24,7 +28,7 @@ header, footer {
 
 a, a:link {
   text-decoration: none;
-  color: #92c9ca;
+  color: var(--main-color);
 }
 
 ul{
@@ -32,7 +36,7 @@ ul{
 }
 
 #branding {
-  background-color: #92c9ca;
+  background-color: var(--main-color);
   color: #323540;
 }
 
@@ -54,7 +58,72 @@ ul li {
 
 ul li a {
   padding-bottom: 5px;
-  border-bottom: 2px solid #92c9ca;
+  border-bottom: 2px solid var(--main-color);
 }
 
 /* header and navbar setting end */
+/*main - setting grid */
+.main-wrap {
+  display: grid;
+grid-template-columns: 1fr 4fr;
+grid-template-rows: 1.5fr 4fr 0.5fr;
+grid-column-gap: 1px;
+grid-row-gap: 10px;
+}
+
+.about { grid-area: 1 / 1 / 2 / 2; }
+.about-content { grid-area: 1 / 2 / 2 / 3; }
+.work { grid-area: 2 / 1 / 3 / 2; }
+.work-content { grid-area: 2 / 2 / 3 / 3; }
+.contact { grid-area: 3 / 1 / 4 / 2; }
+.contact-content { grid-area: 3 / 2 / 4 / 3; }
+
+.about, .about-content, .work, .work-content, .contact, .contact-content {
+  border-right: 1px red solid;
+}
+
+.about-content, .contact-content, .work-content {
+  margin: 5px;
+}
+
+.work-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+#surf { grid-area: 1 / 1 / 2 / 3; }
+#led { grid-area: 2 / 1 / 3 / 2; }
+#calc { grid-area: 2 / 2 / 3 / 3; }
+#pastel { grid-area: 3 / 1 / 4 / 2; }
+#run { grid-area: 3 / 2 / 4 / 3; }
+
+#surf, #led, #calc, #pastel, #run {
+  border: 2px solid var(--main-color);
+  display: grid;
+  justify-content: start;
+  align-content: end;
+  padding-bottom: 10px;
+}
+
+.about-content {
+  /* border: 1px red solid; */
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cards-content {
+  background-color: var(--main-color);
+  height: fit-content;
+  width: fit-content;
+}
+
+/*footer*/
+footer {
+  display: flex;
+  justify-content: center;
+}
