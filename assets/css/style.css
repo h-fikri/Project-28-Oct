@@ -115,7 +115,7 @@ main {
 
 .about-content {
   /* border: 1px red solid; */
-  height: 130px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -125,6 +125,7 @@ main {
   text-align: right;
   font-size: 30px;
   width: min-content;
+  line-height: 1;
 }
 
 .about-content, .contact-content, .work-content {
@@ -182,7 +183,6 @@ main {
   height: 115px;
 }
 
-
 .cards {
   border: 2px solid var(--main-color);
   display: grid;
@@ -191,6 +191,13 @@ main {
   padding-bottom: 10px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.cards:hover {
+  opacity: 1;
 }
 
 .cards-content {
