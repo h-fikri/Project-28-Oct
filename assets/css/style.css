@@ -27,6 +27,9 @@ header, footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: 40px;
 }
 
 ul{
@@ -43,8 +46,14 @@ ul{
   /* margin-right: 40px; */
   display: flex;
   justify-content: space-between;
-  
+  /* border: 1px white solid; */
+  /* padding-left: 20rem; */
 }
+
+nav ul li {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  }
 
 nav ul li a {
   padding-left: 5px;
@@ -63,7 +72,7 @@ nav ul li a {
   height: 150px;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .hero-banner h2 {
