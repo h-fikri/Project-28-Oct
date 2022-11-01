@@ -1,6 +1,23 @@
 # Unit 2 Challenge: Portfolio
 
 ## Your Task
+Personal Comment on this week's Challenge.
+
+Making a website from scratch is my first time try while I tried cloning a website before with code along video tutorials.
+This trial seems a bit 
+
+There will be some minor improvement after I submit it that warrants resubmission. But so far, I am pretty happy with the result. 
+
+My main challenges during the task are as belows:
+* CSS Grid: adjusting the proper grid throughout the website is really hard. I have tried and error many times, even deleting all of the main section and started again from scratch (within the main/body section)
+* Media Queries: getting the proper media queries has been succesfully on one limitation, that is small/medium screen. Further developement could be in more variation of medium, such as small, medium, and large screen. But so far, I'm still learning on how to do that. 
+* Code duplication: the code duplication and refactoring them appears to be hard as I sometimes forgot why I put that code in the first place and as a result I have a sphaghetti code. 
+
+Hopefull the more I practice, the more I understand how to properly build a website in a more structured way. 
+
+Thank you for marking my task. 
+
+## Your Task
 
 This week, you'll build a portfolio page, which you can add to as the course progresses. 
 
