@@ -20,7 +20,6 @@ body {
 /* header and navbar setting start */
 header, footer {
   background-color: var(--second-color);
-  color: var(--main-color);
 }
 
 .container {
@@ -38,8 +37,12 @@ ul{
 
 #branding {
   background-color: var(--main-color);
-  color: var(--second-color);
   padding-left: 100px;
+  color: var(--second-color);
+}
+
+#branding h1 a {
+  text-decoration: none;
 }
 
 .ul-link {
@@ -117,7 +120,7 @@ main {
 
 .about-content {
   /* border: 1px red solid; */
-  height: 100px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -219,6 +222,14 @@ main {
 .cards-content p {
   font-size: smaller;
 }
+
+.contact-content ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: red 1px solid; */
+}
 .contact-content ul li a {
   padding-left: 5px;
   padding-right: 5px;
@@ -241,7 +252,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
   }
+
   #branding {
     padding: 0;
     text-align: center;
@@ -354,6 +367,7 @@ footer {
     .contact-content ul {
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
     }
 
     .contact-content ul li {
