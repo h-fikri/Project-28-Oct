@@ -247,7 +247,7 @@ footer {
 }
 
 /* Small screen devices Mobile (320px and above) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .container {
     display: flex;
     flex-direction: column;
